@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mathclub | Modul</title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib-videojs/videojs.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main class="my-5 pb-5">
+    <h1 class="text-center text-primary font-weight-500 pointer">Modul nomi</h1>
+    <p class="text-center text-muted module-description">Modul haqida qisqacha ma'lumot</p>
+    <div class="d-flex flex-wrap justify-content-center pb-4 pt-2">
+      <div class="col-11 col-md-3 px-0">
+        <h3 class="font-weight-light text-center text-md-right">Narxi: <span class="font-weight-500 pointer">00000 so'm</span>
+        </h3>
+      </div>
+      <div class="col-11 col-md-3 px-0 text-center text-md-left">
+        <button type="button" class="btn btn-success buy-module-btn ml-4" data-toggle="tooltip" onclick="buyModule()">Sotib olish</button>
+      </div>
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center justify-content-xl-start px-4 pt-3 module-topics">
+      <div class="col-12 col-md-3 px-2 mb-4"><div class="accordion shadow" id="topics"></div></div>
+      <div class="col-12 col-md-9 px-2" class="pl-4">
+        <video id="lesson-video" class="video-js vjs-default-skin vjs-big-play-centered shadow rounded overflow-hidden" controls preload="none" poster="/assets/image/video-poster.png" data-setup="{}" w=100 height="500px"><source type="video/mp4"></video>
+
+        <p class="text-center mt-2 mb-1 current-topic-info">
+          1-mavzu. <span class="font-weight-500">Dars nomi.</span> <br> <span class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a veniam odio aliquam dolore odit, pariatur perferendis minus quam ipsam.</span>
+        </p>
+        <div class="text-center"><a target="_blank" class="btn btn-primary topic-file">Mavzuga tegishli pdf fayl</a></div>
+        <p class="text-center mt-3 current-lesson-info">
+          1-dars. <span class="font-weight-500">Dars nomi.</span> <br> <span class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a veniam odio aliquam dolore odit, pariatur perferendis minus quam ipsam.</span>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal loading-modal" tabindex="-1" role="dialog">
+    <div id="loader"><div class="loader-container"></div></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/lib-videojs/videojs.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

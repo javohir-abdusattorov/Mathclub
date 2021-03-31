@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="font-weight-light mt-4 text-center">Modullar</h1>
+
+  <div class="text-center text-md-right pr-md-5 pb-4">
+    <button class="btn btn-success" data-toggle="modal" data-target="#create-module">Yangi modul +</button>
+  </div>
+
+  <ul class="list-group mx-3 mx-md-5 mb-4 shadow modules">
+  </ul>
+
+<div class="modal fade" id="create-module" tabindex="-1" role="dialog" aria-labelledby="create-module-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="create-module-label">Yangi modul</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="create-module-form">
+        <div class="modal-body pb-4">
+          <div class="form-group px-2">
+            <label for="create-module-name">Modul nomi:</label>
+            <input type="text" class="form-control" id="create-module-name" required>
+          </div>
+          <div class="form-group px-2">
+            <label for="create-module-price">Narxi:</label>
+            <input type="number" class="form-control" id="create-module-price" min="0" required>
+          </div>
+          <div class="form-group px-2">
+            <label for="create-module-type">Kim uchun:</label>
+            <select class="form-control" id="create-module-type">
+              <option value="applicants">Abituriyenylar uchun</option>
+              <option value="students">O'quvchilar uchun</option>
+            </select>
+          </div>
+          <div class="form-group px-2 mb-0">
+            <label for="create-module-description">Qisqacha tavsif:</label>
+            <textarea class="form-control" id="create-module-description" rows="2"></textarea>
+          </div>
+        </div>
+        <p class="text-danger my-2 text-center font-weight-bold validation-error"></p>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="submit">Modul qo'shish</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="edit-module" tabindex="-1" role="dialog" aria-labelledby="edit-module-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="edit-module-label">Yangi modul</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="edit-module-form">
+        <div class="modal-body pb-4">
+          <div class="form-group px-2">
+            <label for="edit-module-name">Modul nomi:</label>
+            <input type="text" class="form-control" id="edit-module-name" required>
+          </div>
+          <div class="form-group px-2">
+            <label for="edit-module-price">Narxi:</label>
+            <input type="number" class="form-control" id="edit-module-price" min="0" required>
+          </div>
+          <div class="form-group px-2">
+            <label for="edit-module-type">Kim uchun:</label>
+            <select class="form-control" id="edit-module-type">
+              <option value="applicants">Abituriyenylar uchun</option>
+              <option value="students">O'quvchilar uchun</option>
+            </select>
+          </div>
+          <div class="form-group px-2 mb-0">
+            <label for="edit-module-description">Qisqacha tavsif:</label>
+            <textarea class="form-control" id="edit-module-description" rows="2"></textarea>
+          </div>
+        </div>
+        <p class="text-danger my-2 text-center font-weight-bold validation-error"></p>
+        <div class="modal-footer">
+          <button class="btn btn-outline-primary" type="submit">Saqlash</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal loading-modal" data-backdrop="static" role="dialog">
+  <div class="modal-dialog m-0 w-100 h-100" style="max-width: 100% !important">
+    <div class="modal-content border-0 w-100 h-100 d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0.3)">
+      <div id="loader"><div class="loader-container"></div></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

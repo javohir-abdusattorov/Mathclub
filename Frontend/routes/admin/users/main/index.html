@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="font-weight-light my-4 text-center">Foydalanuvchilar</h1>
+
+  <ul class="list-group mx-3 mx-md-5 mb-4 users">
+  </ul>
+
+<div class="modal fade" id="user-modules-modal" tabindex="-1" role="dialog" aria-labelledby="user-modules-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="user-modules-label">Foydalanuvchi <span class="text-primary underline"></span> modullari</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-4">
+        <ul class="list-group user-modules-container"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="give-modul-modal" tabindex="-1" role="dialog" aria-labelledby="give-module-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="give-module-label">Foydalanuvchi <span class="text-primary underline"></span>'ga modul berish</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pb-4">
+        <form class="give-module-form d-flex align-items-center pt-3">
+          <div class="form-group mb-0 pr-3" style="flex-grow: 1">
+            <select class="form-control" id="give-module-module"></select>
+          </div>
+          <button class="btn btn-success">Modulni berish</button>
+        </form>
+        <p class="text-danger text-center validation-error font-weight-500 mt-2"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal loading-modal" data-backdrop="static" role="dialog">
+  <div class="modal-dialog m-0 w-100 h-100" style="max-width: 100% !important">
+    <div class="modal-content border-0 w-100 h-100 d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0.3)">
+      <div id="loader"><div class="loader-container"></div></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

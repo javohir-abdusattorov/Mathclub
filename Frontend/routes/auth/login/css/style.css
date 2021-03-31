@@ -1,0 +1,100 @@
+body{
+  background-color: #dee9ff;
+}
+
+main {
+  padding-top: 100px;
+}
+
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px 70px 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+main .form-icon{
+	text-align: center;
+  background-color: #5891ff;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+main .item{
+	border-radius: 25px;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+main .create-account{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+main .social-media{
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+main .social-icons{
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+main .social-icons a{
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+main .social-icons a:hover{
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  main form{
+    padding: 50px 20px;
+  }
+
+  main .form-icon{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+h4 {
+  text-align: center;
+}

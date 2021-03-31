@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mathclub</title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/lib-videojs/videojs.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <div class="col-11 mx-auto my-5 px-0 bg-white overflow-hidden rounded shadow">
+      <h1 class="font-weight-light py-3 text-center">Bizning videodarslar haqida qisqacha</h1>
+      <video id="landing-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"  data-setup="{}" w=100 height="500px"><source type="video/mp4" src="/assets/video/about.mp4"></video>
+      <p class="mt-3 mb-4 px-4" id="landing-text"></p>
+    </div>
+    <div class="mx-auto mt-5 pt-5 pb-5" id="applicants-modules" w=75>
+      <h1 class="text-center mb-3">Abituriyentlar uchun kurslar</h1>
+      <div class="row align-items-stretch justify-content-center justify-content-xl-start applicants-modules"></div>
+    </div>
+    <div class="mx-auto mt-4 pb-5" id="students-modules" w=75>
+      <h1 class="text-center mb-3">O'quvchilar uchun kurslar</h1>
+      <div class="row align-items-stretch justify-content-center justify-content-xl-start students-modules"></div>
+    </div>
+  </main>
+
+  <div class="modal loading-modal" tabindex="-1" role="dialog">
+    <div id="loader"><div class="loader-container"></div></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/lib-videojs/videojs.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

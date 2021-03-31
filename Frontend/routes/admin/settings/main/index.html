@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="cabinet-navbar-placeholder"></div>
+
+  <h1 class="font-weight-light mt-4 mt-md-5 mb-4 text-center">Sozlamalar</h1>
+
+  <div class="col-11 col-md-6 mb-5 bg-white mx-auto shadow rounded">
+    <form class="settings-form pb-3 mb-4">
+      <div class="form-group pt-4 px-3">
+        <label for="name">Login:</label>
+        <input type="text" class="form-control" maxlength="30" id="name" placeholder="Ismingizni kiriting">
+      </div>
+      <div class="form-group py-2 px-3">
+        <label for="old-password">Agar parolni ozgartirmoqchi bo'lsangiz, eski parolni kiriting:</label>
+        <input type="password" class="form-control" maxlength="30" id="old-password" autocomplete="new-password">
+      </div>
+      <div class="form-group pt-1 pb-2 px-3">
+        <label for="new-password">Yangi parolni kiriting:</label>
+        <input type="password" class="form-control" maxlength="30" id="new-password" autocomplete="new-password">
+      </div>
+      <p class="text-danger my-2 text-center font-weight-bold validation-error"></p>
+      <p class="text-warning my-2 text-center font-weight-bold warnings"></p>
+      <div class="text-center"><button class="btn btn-primary" type="submit">Saqlash</button></div>
+    </form>
+  </div>
+
+  <div class="col-11 col-md-6 mb-5 pt-3 bg-white mx-auto shadow rounded">
+    <h3 class="text-center font-weight-light mb-5">Kirish matn va video</h3>
+    <form class="config-form pb-3 mb-4">
+      <div class="d-flex justify-content-between px-3">
+        <p class="mb-0 font-weight-bold text-danger landing-video-toggle-text">Kirish qismda video ko'rinsin</p>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="landing-video-toggle" onchange="toggleVideoVisible()">
+          <label class="custom-control-label" for="landing-video-toggle"></label>
+        </div>
+      </div>
+      <div class="form-group px-3 pt-2">
+        <p class="mb-1">Agar videoni almashtirmoqchi bo'lsangiz yangi videoni yuklang</p>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="landing-video" accept="video/mp4">
+          <label class="custom-file-label" for="landing-video">Video yuklang</label>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between px-3 pt-4">
+        <p class="mb-0 font-weight-bold text-danger landing-text-toggle-text">Kirish qismda matn ko'rinsin</p>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="landing-text-toggle" onchange="toggleTextVisible()">
+          <label class="custom-control-label" for="landing-text-toggle"></label>
+        </div>
+      </div>
+      <div class="form-group px-3 pt-2">
+        <label for="landing-text">Matn</label>
+        <textarea class="form-control" id="landing-text" rows="5" required></textarea>
+      </div>
+      <p class="text-danger my-2 text-center font-weight-bold validation-error"></p>
+      <p class="text-warning my-2 text-center font-weight-bold warnings"></p>
+      <div class="text-center"><button class="btn btn-primary" type="submit">Saqlash</button></div>
+    </form>
+  </div>
+
+  <div class="modal loading-modal" tabindex="-1" role="dialog">
+    <div id="loader"><div class="loader-container"></div></div>
+  </div>
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

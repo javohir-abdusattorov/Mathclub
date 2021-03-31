@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mathclub | Ro'yxatdan o'tish</title>
+    <link rel="icon" type="image/png" href="/assets/image/logo.png" sizes="57x57">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/utils/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="pb-5">
+    <form>
+      <h4 class="text-center mb-4">Ro'yxatdan o'tish</h4>
+      <div class="form-group">
+        <input type="text" class="form-control item" id="name" maxlength="30" required="Iltimos ismingizni kiriting" placeholder="Ismingizni kiriting">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control item phone-number-input" id="phone-number" placeholder="Telefon raqamingizni kiriting">
+      </div>
+      <div class="form-group">
+         <input type="password" class="form-control item" id="password" required="Iltimos parol kiriting" minlength="6" placeholder="Parolni kiriting">
+      </div>
+      <div class="form-group">
+         <input type="password" class="form-control item" id="confirm-password" required="Parolni tasdiqlang" minlength="6" placeholder="Parolni tasdiqlang">
+      </div>
+      <div class="text-center font-weight-500 text-danger validation-error"></div>
+      <button type="submit" class="btn btn-primary btn-block create-account">Kirish</button>
+      <p class="text-center mt-4 mb-0">Ro'yxatdan o'tganmisiz? <a href="/auth/login">Kirish</a></p>
+    </form>
+  </main>
+
+  <div class="modal loading-modal" tabindex="-1" role="dialog">
+    <div id="loader"><div class="loader-container"></div></div>
+  </div>
+
+<script src="/assets/lib-jquery/jquery.min.js" defer></script>
+<script src="/assets/lib-jquery/jquery-mask.min.js" defer></script>
+<script src="/assets/lib-popper/popper.min.js" defer></script>
+<script src="/assets/lib-bootstrap/bootstrap.min.js" defer></script>
+<script src="/assets/utils/helpers.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
